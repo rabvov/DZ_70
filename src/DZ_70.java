@@ -14,12 +14,17 @@ public class DZ_70 {
                 throw new NullPointerException();
             if (b==0)
                 throw new ArithmeticException();
+            if (a<0||b<0)
+                throw new Exception();
         }
         catch (NullPointerException nullPointerException) {
             System.out.println("0 всегда будет 0");
         }
         catch (ArithmeticException arithmeticException) {
             System.out.println("Деление на 0");
+        }
+        catch (Exception value){
+            System.out.println("Деление с ориццательным числом");
         }
 
 
