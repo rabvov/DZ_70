@@ -15,12 +15,13 @@ public class DZ_70 {
             if (b==0)
                 throw new ArithmeticException();
         }
-        catch (ArithmeticException arithmeticException) {
-            System.out.println("Деление на 0");
-        }
         catch (NullPointerException nullPointerException) {
             System.out.println("0 всегда будет 0");
         }
+        catch (ArithmeticException arithmeticException) {
+            System.out.println("Деление на 0");
+        }
+
 
         try {
             if (a-b<0)
